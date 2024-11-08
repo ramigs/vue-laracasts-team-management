@@ -1,7 +1,7 @@
 {
   "name": "Smiley",
   "logo": "smiley.png",
-  "spots": 5,
+  "spots": 10,
   "members": [
     {
       "name": "John Doe",
