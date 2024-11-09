@@ -25,9 +25,9 @@ team.fetchData()
   <TeamModal :show="showModal" @closeModalClick="showModal = false">
     <template #header>New Member</template>
     <template #default>
-      <form @submit.prevent>
-        <input type="email" placeholder="Email" style="flex: 1 1 0%" />
-        <button>Add</button>
+      <form>
+        <input placeholder="Email" style="flex: 1 1 0%" />
+        <button type="button">Add</button>
       </form>
     </template>
   </TeamModal>
