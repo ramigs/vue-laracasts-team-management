@@ -22,15 +22,17 @@ team.fetchData()
     </p>
   </div>
   <TeamFooter />
-  <TeamModal :show="showModal" @closeModalClick="showModal = false">
-    <template #header>New Member</template>
-    <template #default>
-      <form>
-        <input placeholder="Email" style="flex: 1 1 0%" />
-        <button type="button">Add</button>
-      </form>
-    </template>
-  </TeamModal>
+  <Teleport to="body">
+    <TeamModal :show="showModal" @closeModalClick="showModal = false">
+      <template #header>New Member</template>
+      <template #default>
+        <form>
+          <input placeholder="Email" style="flex: 1 1 0%" />
+          <button type="button">Add</button>
+        </form>
+      </template>
+    </TeamModal>
+  </Teleport>
 </template>
 
 <style scoped>

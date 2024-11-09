@@ -35,30 +35,34 @@ defineEmits(['closeModalClick'])
 <style scoped>
 .modal-enter-from {
   opacity: 0;
+  transform: scale(1.25);
 }
 
 .modal-enter-to {
   opacity: 1;
+  transform: scale(1);
 }
 
 .modal-enter-transition {
-  transition-property: opacity;
+  transition-property: opacity transform;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 3000ms;
+  transition-duration: 300ms;
 }
 
 .modal-leave-from {
   opacity: 1;
+  transform: scale(1);
 }
 
 .modal-leave-to {
   opacity: 0;
+  transform: scale(1.25);
 }
 
 .modal-leave-transition {
-  transition-property: opacity;
+  transition-property: opacity transform;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 2000ms;
+  transition-duration: 200ms;
 }
 
 .modal-mask {
