@@ -1,5 +1,8 @@
 # vue-laracasts-team-management
 
+Originally from [Learn Vue 3: Step by
+Step](https://laracasts.com/series/learn-vue-3-step-by-step).
+
 This template should help get you started developing with Vue 3 in Vite.
 
 ## Recommended IDE Setup
